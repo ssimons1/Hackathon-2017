@@ -1,12 +1,6 @@
 body .container{
 	font-family: 'Lemonada', cursive;
 
-
-}
-
-.container{
-margin:0px;
-
 }
 
 .row{
@@ -22,9 +16,6 @@ margin:0px;
 .col-md-3{
 	border: 1px solid black;	
 }
-.container .tool-bar.row {
-	height: 60px;
-}
 
 .container .main.row {
 	height: 650px;
@@ -33,6 +24,26 @@ margin:0px;
 	background-size: cover;
 	opacity: 0.6;
 }
+
+.container .main.row h1{
+	font-size: 80px;
+}
+
+.container .main.row h1,h3,.text-center{
+	color: black;
+	text-align: center;
+}
+.container .main.row #owner{
+	padding: 12px;
+	font-size: 30px;
+	border-radius: 10px;
+}
+.container .main.row #host{
+	padding: 12px;
+	font-size: 15px;
+	border-radius: 10px;	
+}
+
 
 .container .how-it-works.row {
 	height: 250px;
