@@ -9,7 +9,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {
     display: block;
 }
-
 .sidebar::-webkit-scrollbar-track, body::-webkit-scrollbar-track
 {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
@@ -21,7 +20,6 @@ article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, s
     width: 6px;
     background-color: #F5F5F5;
 }
-
 .sidebar::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb
 {
     background-color: #000000;
@@ -91,6 +89,29 @@ nav.horizontal ul li {
 }/* horizontal menu */
 img {
     max-width:100%;
+}
+
+#submitSitter {
+    background-color: rgba(0, 0, 0, 0.21);
+    padding: 19px;
+    cursor: pointer;
+    transition: all 0.7s ease;
+}
+
+#submitSitter:hover {
+    background-color: #14d7f5;
+    padding: 19px;
+    cursor: pointer;
+    color: white;
+}
+
+.pendingRequest {
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 /*--- end reset code ---*/
@@ -189,7 +210,13 @@ ul.size li.white{
     background:#fff;
     height:50px;
 }
-input#name, input#email, input#price, input#orgn, textarea#message {
+
+input#phone {
+    height: 40px;
+    padding: 0 15px;
+    width: 92.2%;
+}
+input#name, input#email, input#price, input#orgn, textarea#message, input#phone {
     border: none;
     color: #fff;
     text-align: justify;

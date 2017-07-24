@@ -13,4 +13,8 @@
     border: 1px solid blue;
     padding: 3px;
 	}
+
+	.container .contact-us.row .col-md-6.pic {
+    display: none;
+}
 }

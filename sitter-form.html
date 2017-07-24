@@ -10,6 +10,7 @@
 <link href="https://fonts.googleapis.com/css?family=Lemonada" rel="stylesheet">
 <link href="css/style.css" rel='stylesheet' type='text/css' media="all" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
 <body>
 <h1 class="header">Gur-Sitter Application Form</h1>
@@ -20,19 +21,19 @@
 				<div class="grid">
 					<div class="form-control"> 
 						<label class="header">Name</label>
-						<input type="text" id="name" name="name" placeholder="Name" title="Please enter your Full Name" required="">
+						<input type="text" id="name" name="name" placeholder="Name" title="Please enter your Full Name">
 					</div>
 					<div class="form-control">	
 						<label class="header">Email</label>
-						<input type="email" id="email" name="email" placeholder="Mail@example.com" title="Please enter a Valid Email Address" required="">
+						<input type="email" id="email" name="email" placeholder="Mail@example.com" title="Please enter a Valid Email Address">
 					</div>
 					<div class="form-control">	
 						<label class="header">Hourly Rate</label>
-						<input type="price" id="price" name="price" placeholder="25$/h" title="Please enter your Hourly Rate" required="">
+						<input type="price" id="price" name="price" placeholder="25$/h" title="Please enter your Hourly Rate">
 					</div>
 					<div class="form-control"> 
 						<label class="header">Phone</label>
-						<input type="text" id="phone" name="phone" placeholder="Phone" title="Please enter your Phone No" required="">
+						<input type="text" id="phone" name="phone" placeholder="Phone" title="Please enter your Phone No">
 					</div>
 				</div>
 				<div class="form-control">
@@ -223,10 +224,14 @@
 						</div>
 				</label>
 			<div class="wthreesubmitaits">
-				<input type="submit" name="submit" value="Submit">
+				<span id="submitSitter" type="submit" name="submit" value="Submit">Submit</span>
 			</div>
 		</form>
 	</div>	
 </div>
+<div class="pendingRequest">
+	
+</div>
+<script src="./javascript/sitter.js"></script>
 </body>
 </html>
