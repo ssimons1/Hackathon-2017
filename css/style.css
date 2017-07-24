@@ -106,12 +106,23 @@ img {
 }
 
 .pendingRequest {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.88);
     height: 100vh;
     width: 100%;
     position: absolute;
     left: 0;
     top: 0;
+    display: block;
+}
+
+.thankyou {
+    font-size: 40px;
+    margin-top: 140px;
+}
+
+.thankyouSub {
+    margin-top: 30px;
+    line-height: 30px
 }
 
 /*--- end reset code ---*/
