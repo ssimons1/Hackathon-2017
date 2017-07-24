@@ -1,6 +1,8 @@
 .logo {
-	width: 80px;
+	width: 90px;
 	margin-left: 40px;
+	position: relative;
+	top: -10px;
 }
 
 #bs-example-navbar-collapse-1 {
@@ -8,9 +10,9 @@
 }
 
 .navbar-nav.navbar-right li a:hover {
-	background-color: lightgreen;
+    background-color: #64ab9e;
+    color: white;
 }
-
 .filterItems {
 	margin-top: 40px;
 	margin-bottom: 20px;
@@ -30,12 +32,13 @@
 }
 
 .sidebar {
-	height: 100vh;
-	background-color: lightgrey;
-	margin-left: 30px;
-	width: 54%;
-	overflow: scroll;
-	transition: all 0.8s ease;
+    height: 100vh;
+/*    background-color: #64ab9e;*/ 
+   margin-left: 30px;
+    width: 54%;
+    overflow: scroll;
+    transition: all 0.8s ease;
+    color: white;
 }
 
 .mapDiv {
@@ -97,6 +100,14 @@
     padding-bottom: 10px;
     cursor: pointer;
     transition: all 0.8s ease;
+}
+
+.sitter:nth-child(odd) {
+    background: #64ab9e;
+}
+
+.sitter:nth-child(even) {
+    background: #6466ab;
 }
 
 .col-md-12.bigger {
