@@ -37,6 +37,10 @@ body .container{
 	margin: 0;
 }
 
+.container .main.row .homepage-buttons{
+	color: #6466ab;
+}
+
 .container .main.row h1{
 	font-size: 80px;
 	margin-top: 20px;
@@ -83,17 +87,24 @@ body .container{
 	background-repeat: no-repeat;
 	opacity: 0.8;
 }
+
+.container .how-it-works.row .steps-text{
+	font-weight: bold;
+}
+
 .how-it-works.row .col-md-4.one{
 	background-image: url('https://static.pexels.com/photos/59523/pexels-photo-59523.jpeg');
 }
+
 .how-it-works.row .col-md-4.two{
 	background-image: url('https://static.pexels.com/photos/4933/lake-animals-dogs-pets.jpg');
 
 }
+
 .how-it-works.row .col-md-4.three{
 	background-image: url('https://static.pexels.com/photos/511299/pexels-photo-511299.jpeg');
-
 }
+
 .how-it-works.row .col-md-4 h3{
 	text-align: center;
 }
@@ -115,7 +126,6 @@ body .container{
 }
 
 .container .guarantees.row .logo-container{
-    margin-top: 1%;
     text-align: center;
     width: 47%;
     vertical-align: top;
