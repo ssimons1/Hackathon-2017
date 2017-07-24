@@ -7,18 +7,6 @@ body .container{
 
 }
 
-.row{
-	border: 1px solid black;
-}
-
-.col-md-6{
-	border: 1px solid black;
-
-}
-.col-md-3{
-	border: 1px solid black;	
-}
-
 .container .main.row {
 	height: 650px;
 	background-image: url('https://positively.com/files/dogwalkroutine.jpg');
@@ -32,7 +20,7 @@ body .container{
 	margin-top: 20px;
 }
 
-.container .main.row h1,h3,.text-center{
+.main.row h1,h3,.text-center{
 	color: white;
 	text-align: center;
 }
@@ -85,9 +73,24 @@ body .container{
 	height: 300px;
 }
 
-.guarantees.row {
+.container .guarantees.row{
 	height: 300px;
 	background-color: #efefef;
+}
+
+.container .guarantees.row .section{
+	text-align: left;
+	margin-left: 20px;
+}
+
+.container .guarantees.row .logo-container{
+    margin-left: 10%;
+    margin-top: 1%;
+}
+
+.container .guarantees.row .guarantee-head{
+	color: black;
+	text-align: left;
 }
 
 
