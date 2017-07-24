@@ -78,7 +78,7 @@ img {
 
 /*--- end reset code ---*/
 body {
-    background: url(../images/1.jpg);
+    background-image: url('../images/barn-sun.jpeg');
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -95,9 +95,10 @@ h1.header {
     font-weight: normal;
     padding-top: 50px;
     text-transform: uppercase;
-    color: white;
+    color: #e5e5e5;
     font-family: 'Lemonada';
     letter-spacing: 3px;
+    text-shadow: 2px 2px #aaa7a7;
 }
 h2 {
     font-size: 30px;
@@ -111,8 +112,9 @@ p {
 .content-ls {
     width: 35%;
     margin: 50px auto 50px;
-    background-color:rgba(84, 84, 85, 0.52);
+    background-color:rgba(84, 84, 85, 0.7);
     padding: 55px 50px;
+    border-radius: 18px;
 }
 .content {
     width:100%;
