@@ -68,7 +68,7 @@ body .container{
 
 .container .how-it-works.row {
 	height: 250px;
-
+	margin: 0;
 }
 .how-it-works.row .col-md-4{
 	height: 250px;
