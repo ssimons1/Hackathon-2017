@@ -1,3 +1,7 @@
+body{
+	background-color: #f2f2f2;
+}
+
 body .container{
 	font-family: 'Lemonada', cursive;
 
@@ -6,9 +10,7 @@ body .container{
 .row{
 	border: 1px solid black;
 }
-.col-md-4{
-	border: 1px solid black;
-}
+
 .col-md-6{
 	border: 1px solid black;
 
@@ -27,10 +29,11 @@ body .container{
 
 .container .main.row h1{
 	font-size: 80px;
+	margin-top: 20px;
 }
 
 .container .main.row h1,h3,.text-center{
-	color: black;
+	color: white;
 	text-align: center;
 }
 .container .main.row #owner{
@@ -44,6 +47,14 @@ body .container{
 	border-radius: 10px;	
 }
 
+.container .sliding-reviews.row{
+	height: 400px;
+}
+
+.carousel-inner .item .reviews img{
+	width: 500px;
+}
+
 
 .container .how-it-works.row {
 	height: 250px;
@@ -53,7 +64,7 @@ body .container{
 	height: 250px;
 	background-size: cover;
 	background-repeat: no-repeat;
-	opacity: 0.3;
+	opacity: 0.8;
 }
 .how-it-works.row .col-md-4.one{
 	background-image: url('https://static.pexels.com/photos/59523/pexels-photo-59523.jpeg');
@@ -74,12 +85,27 @@ body .container{
 	height: 300px;
 }
 
-.container .guarantees.row {
+.guarantees.row {
 	height: 300px;
+	background-color: #efefef;
 }
+
 
 .container .tips.row {
 	height: 300px;
+}
+
+.container .tips.row .col-md-6{
+	height: 300px;
+}
+
+.tips.row .col-md-6.pic{
+	background-image: url('../images/family-and-dog-beach.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.tips.row .col-md-6.suggestions{
+	background-color: #efefef;
 }
 
 .container .contact-us.row {
@@ -99,6 +125,10 @@ body .container{
 }
 .container .contact-us.row .col-md-6.contact h2{
 	font-weight: bold;
+
+}
+.container .contact-us.row .col-md-6.contact{
+	background-color: #efefef;	
 }
 
 .container .footer.row{
@@ -107,3 +137,43 @@ body .container{
 .container .footer.row .col-md-3{
 	height: 280px;
 }
+
+.carousel-inner .item {
+    position: relative;
+}
+
+.carousel-inner .item img {
+    width: 100%;
+    position: absolute;
+}
+
+.carousel-inner .item .reviews{
+	position: absolute;
+}
+
+.col-md-7 h4{
+	margin-right: 18px;
+}
+
+body .container .footer.row{
+
+	width: auto;
+
+}
+
+.footer{
+	display: inline-block;
+}
+.footer.row{
+	background-color: #eae3e3;
+}
+
+.footer #copyrighttext{
+
+	text-align: center;
+}
+
+#logo-image{
+	margin-top: 13%;
+}
+
