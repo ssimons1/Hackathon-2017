@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Gur-Sitter Application Form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href='//fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<link href="css/style.css" rel='stylesheet' type='text/css' media="all" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<h1 class="header">Gur-Sitter Application Form</h1>
+<div class="content-ls">
+	<div class="form">
+		<form action="#" method="post">
+			<div class="content">
+				<div class="grid">
+					<div class="form-control"> 
+						<label class="header">Name</label>
+						<input type="text" id="name" name="name" placeholder="Name" title="Please enter your Full Name" required="">
+					</div>
+					<div class="form-control">	
+						<label class="header">Email</label>
+						<input type="email" id="email" name="email" placeholder="Mail@example.com" title="Please enter a Valid Email Address" required="">
+					</div>
+					<div class="form-control">	
+						<label class="header">Hourly Rate</label>
+						<input type="price" id="price" name="price" placeholder="25$/h" title="Please enter your Hourly Rate" required="">
+					</div>
+					<div class="form-control"> 
+						<label class="header">Phone</label>
+						<input type="text" id="phone" name="phone" placeholder="Phone" title="Please enter your Phone No" required="">
+					</div>
+				</div>
+				<div class="form-control">
+				<div class="main-row">
+					<label class="header" id="cancelation">What is your cancellation policy?</label>
+						<select name="country">
+							<option value="none" selected="" disabled="" required></option>
+							<option value="Flexible">Flexible</option>
+							<option value="Moderate">Moderate</option>
+							<option value="Strict">Strict</option>
+						</select>
+					</div>
+					</div>
+					<div class="form-control">
+						<div class="main-row">
+							<label class="header" id="pottyFrequency">How often can you provide a potty break?</label>
+							<select name="country">
+								<option value="none" selected="" disabled="" required></option>	
+								<option value="0-2">0-2 Hours</option>
+								<option value="2-4">2-4 Hours</option>
+								<option value="4-8">4-8 Hours</option>
+								<option value="8+">8+ Hours</option>
+							</select>						
+						</div>
+					</div>
+					<div class="form-control">
+						<div class="main-row">
+							<label class="header" id="homeType">What kind of home do you have?</label>
+							<select name="country">
+								<option value="none" selected="" disabled="" required></option>	
+								<option value="Apartment">Apartment</option>
+								<option value="House">House</option>
+								<option value="Farm">Farm</option>
+							</select>						
+						</div>
+					</div>
+					<div class="form-control">
+						<div class="main-row">
+							<label class="header" id="yard">What kind of a yard do you have?</label>
+							<select name="country">
+								<option value="none" selected="" disabled="" required></option>	
+								<option value="Fenced">Fenced</option>
+								<option value="Unfenced">Unfenced</option>
+								<option value="Non">Non</option>
+							</select>						
+						</div>
+					</div>
+			</div>
+			<div class="content">
+				<div class="grid-layouts1">
+					<label class="fullTime">Will you be home full time?</label>
+					<ul>
+						<li>
+							<input type="radio" id="a-option" name="selector1">
+							<label for="a-option" value=1>Yes</label>
+							<div class="check"></div>
+						</li>
+						<li>
+							<input type="radio" id="b-option" name="selector1">
+							<label for="b-option" value=0>No</label>
+							<div class="check"></div>
+						</li>
+						<div class="clear"></div>
+					</ul>					
+				</div>				
+			</div>
+			<br><br>
+			<div class="content">
+				<div class="grid-layouts1">
+					<label class="puppiesUnderOne">Will you accept puppies under 1 year?</label>
+					<ul>
+						<li>
+							<input type="radio" id="c-option" name="selector2">
+							<label for="c-option" value=1>Yes</label>
+							<div class="check"></div>
+						</li>
+						<li>
+							<input type="radio" id="d-option" name="selector2">
+							<label for="d-option" value=2>No</label>
+							<div class="check"><div class="inside"></div>
+						</li>
+						<div class="clear"></div>
+					</ul>					
+				</div>				
+			</div>
+			<br><br>
+			<div class="content">
+				<div class="grid-layouts1">
+					<label class="smoking">Do members of your houshold smoke at home?</label>
+					<ul>
+						<li>
+							<input type="radio" id="e-option" name="selector3">
+							<label for="e-option" value=1>Yes</label>
+							<div class="check"></div>
+						</li>
+						<li>
+							<input type="radio" id="f-option" name="selector3">
+							<label for="f-option" value=0>No</label>
+							<div class="check"><div class="inside"></div>
+						</li>
+						<div class="clear"></div>
+					</ul>					
+				</div>				
+			</div>
+			<br><br>
+			<div class="content">
+				<div class="grid-layouts1">
+					<label class="catsAtHome">Do you have cats at home?</label>
+					<ul>
+						<li>
+							<input type="radio" id="g-option" name="selector4">
+							<label for="g-option" value=1>Yes</label>
+							<div class="check"></div>
+						</li>
+						<li>
+							<input type="radio" id="h-option" name="selector4">
+							<label for="h-option" value=0>No</label>
+							<div class="check"><div class="inside"></div>
+						</li>
+						<div class="clear"></div>
+					</ul>					
+				</div>				
+			</div>
+			<br><br>
+			<div class="content">
+				<div class="grid-layouts1">
+					<label class="cagedPets">Do you have caged pets?</label>
+					<ul>
+						<li>
+							<input type="radio" id="i-option" name="selector5">
+							<label for="i-option" value=1>Yes</label>
+							<div class="check"></div>
+						</li>
+						<li>
+							<input type="radio" id="j-option" name="selector5">
+							<label for="j-option" value=0>No</label>
+							<div class="check"><div class="inside"></div>
+						</li>
+						<div class="clear"></div>
+					</ul>					
+				</div>				
+			</div>
+			<br><br>
+			<div class="content">
+				<div class="grid-layouts1">
+					<label class="dogsOnFurniture">Do you allow dogs on furniture?</label>
+					<ul>
+						<li>
+							<input type="radio" id="k-option" name="selector6">
+							<label for="k-option" value=1>Yes</label>
+							<div class="check"></div>
+						</li>
+						<li>
+							<input type="radio" id="l-option" name="selector6">
+							<label for="l-option" value=0>No</label>
+							<div class="check"><div class="inside"></div>
+						</li>
+						<div class="clear"></div>
+					</ul>					
+				</div>				
+			</div>
+			<br><br>
+			<div class="content">
+				<div class="grid-layouts1">
+					<label class="dogsOnBed">Do you allow dogs on the bed?</label>
+					<ul>
+						<li>
+							<input type="radio" id="m-option" name="selector7">
+							<label for="m-option" value=1>Yes</label>
+							<div class="check"></div>
+						</li>
+						<li>
+							<input type="radio" id="n-option" name="selector7">
+							<label for="n-option" value=0>No</label>
+							<div class="check"><div class="inside"></div>
+						</li>
+						<div class="clear"></div>
+					</ul>					
+				</div>				
+			</div>
+			<br><br>
+			<div class="ls-btn">
+				<div class="contact-forms">
+				<label class="picture">Upload your picture</label>
+				<label class="input">
+						<div class="upload-btn">
+							<input type="file" name="file1" onchange="document.getElementById('file1_input').value = this.value;">
+						</div>
+				</label>
+			<div class="wthreesubmitaits">
+				<input type="submit" name="submit" value="Submit">
+			</div>
+		</form>
+	</div>	
+</div>
+</body>
+</html>
