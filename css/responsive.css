@@ -1,0 +1,16 @@
+@media screen and (max-width: 992px) {
+/*	.walkerThumb {
+		width: 100%;
+	}*/
+	
+	.walkerAbout {
+	width: 50%;
+	font-size: 13px;
+    display: inline-block;
+    margin-top: 20px;
+    height: 70px;
+    overflow-y:scroll;
+    border: 1px solid blue;
+    padding: 3px;
+	}
+}
