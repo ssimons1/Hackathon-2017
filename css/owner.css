@@ -110,6 +110,19 @@
     background: #6466ab;
 }
 
+.back:nth-child(even) {
+    background: #64ab9e;
+    color: white;
+}
+
+.back:nth-child(odd) {
+    background: #6466ab;
+    color: white;
+}
+
+
+
+
 .col-md-12.bigger {
 	border: 0px;
 }
