@@ -42,6 +42,7 @@ body .container{
 	margin-top: 20px;
 	background-color: rgba(0, 0, 0, 0.4);
 	padding: 15px;
+	text-shadow: -6px 8px 14px white;
 }
 .main.row h3{
 	background-color: rgba(0, 0, 0, 0.4);
