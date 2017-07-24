@@ -2,50 +2,87 @@
 <html>
 <head>
 	<title>Hackathon</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="./css/hackathon.css">
 	<link href="https://fonts.googleapis.com/css?family=Lemonada" rel="stylesheet">
 	<meta charset="UTF-8">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+	
 </head>
 <body>
 	<div class="container">
 		<div class="main row">
-			<h1>App Name</h1>
-			<h3>Tagline</h3><br><br><br><br><br><br>
+			<br><br>
+			<h1>Gurbnb</h1>
+			<h3>The best for your best.</h3><br><br><br><br><br><br>
 			<div class="text-center">
-				<button id="owner">I am looking for a host</button><br><br><br><br><br>
-				<button id="host">I want to become a host</button>
+				<a href="LINK TO RIFAT'S"><button id="owner">I am looking for a sitter</button></a><br><br><br><br><br>
+				<a href="LINK TO LIOR'S"><button id="host">I want to become a sitter</button></a>
 			</div>
 		</div>
 		<div class="sliding-reviews row">
-		</div>
+			<div id="review-carousel" class="carousel slide" data-pause="carousel">
+			  <!-- Indicators -->
+			  		<ol class="carousel-indicators">
+			    		<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			    		<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			    		<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			  		</ol>
+
+			  <!-- Wrapper for slides -->
+			  	<div class="carousel-inner" role="listbox">
+				    	<div class="item active">
+				      	<img src="./images/dog-on-woman.jpg" alt="photo">
+				      	<div class="carousel-caption">
+				        ...
+				      	</div>
+				    	</div>
+				    <div class="item">
+				      <img src="./images/woman-dog-field.jpg" alt="photo">
+				      <div class="carousel-caption">
+				        ...
+				      </div>
+				   	</div>
+				    ...
+			  	</div>
+			</div>
 		<div class="how-it-works row">
 			<div class="col-md-4 one">
-				<h2>1</h2>
-				<h4 class="steps"></h4>
+				<div class="col-md-7">
+					<h2>1</h2>
+					<h4 class="steps">Search for your ideal sitter.</h4>
+				</div>
 			</div>
 			<div class="col-md-4 two">
 				<h2>2</h2>
-				<h4 class="steps"></h4>
+				<h4 class="steps">Contact the sitter/s of your choice.</h4>
 			</div>	
 			<div class="col-md-4 three">
 				<h2>3</h2>
-				<h4 class="steps"></h4>
+				<h4 class="steps">Make arrangements for your pet's stay.</h4>
 			</div>	
 		</div>
 
 		<div class="guarantees row">
-			<div class="col-md-6">
+			<div class="col-md-8">
+				<br>
+				<h3>24/7 Customer Support</h3>
+				<span class="guarantee">We are here for you via phone and email whenever you need us.</span><br>
+				<h3>Premium Pet Insurance</h3>
+				<span class="guarantee">Every reservation made through our site is covered.</span><br>
+				<h3>Daily Photo Updates</h3>
+				<span class="guarantee">You can see how much fun your pet is having while you're away.</span>
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-4">
+				<img id="logo-image" src="./images/cropped-logo.gif" alt="logo">
 			</div>
 		</div>
 		<div class="tips row">
-			<div class="col-md-6">
+			<div class="col-md-6 suggestions">
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-6 pic">
 			</div>
 		</div>
 		<div class="contact-us row">
@@ -60,16 +97,63 @@
 
 			</div>
 		</div>
-		<div class="footer row">
-			<div class="col-md-3">
+		<div class="container footer row">	
+			<div class="footer-1 footer">
+				<span class="titles">Help</span>
+					<ul class="firstsectionlist">
+						<li class="item">Support</li>
+						<li class="item">Contact</li>
+					</ul>
+				<span class="titles">About Gurbnb</span>
+					<ul class="firstsectionlist">
+						<li class="item">About Us</li>
+						<li class="item">Joining Forces</li>
+						<li class="item">Press</li>
+					</ul>
 			</div>
-			<div class="col-md-3">
+			
+			<div class="footer-2 footer">
+				<span class="titles">Resources</span>
+					<ul class="firstsectionlist">
+						<li class="item">Become a Sitter</li>
+						<li class="item">Dog Sitting Guide</li>
+						<li class="item">Blog</li>							
+					</ul>
+				<span class="titles">Our Service</span>
+					<ul class="firstsectionlist">
+						<li class="item">Dog Boarding</li>
+					</ul>
 			</div>
-			<div class="col-md-3">
+
+			<div class="footer-4 footer">
+				<span class="titles">Guarantees</span>
+					<ul class="firstsectionlist">
+						<li class="item">Manage Your Apple ID</li>
+						<li class="item">Apple Store Account</li>
+						<li class="item">iCloud.com</li>
+					</ul>
+				<span class="titles">Gurbnb Values</span>
+					<ul class="firstsectionlist">
+						<li class="item">Accessibility</li>
+						<li class="item">Education</li>
+						<li class="item">Environment</li>
+						<li class="item">Inclusion and Diversity</li>
+						<li class="item">Privacy</li>
+						<li class="item">Supplier Responsibility</li>
+					</ul>
 			</div>
-			<div class="col-md-3">
-			</div>		
+			<div class="footer-5 footer">
+				<span class="titles">About Gurbnb</span>
+					<ul class="firstsectionlist">
+						<li class="item">Newsroom</li>
+						<li class="item">Job Opportunities</li>
+						<li class="item">Investors</li>
+						<li class="item">Contact Gurbnb</li>
+					</ul>
+					<span id="copyrighttext">© Gurbnb. Made with love in Tel Aviv.</span>
+			</div>
 		</div>
+		
 	</div>
 
 	<script src="./javascript/hackathon.js"></script>
