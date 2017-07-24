@@ -30,6 +30,11 @@ table {
 a {
     text-decoration:none;
 }
+.logo {
+    width: 80px;
+    margin-left: 40px;
+}
+
 .txt-rt {
     text-align:right;
 }/* text align right */
@@ -90,7 +95,8 @@ h1.header {
     font-weight: normal;
     padding-top: 50px;
     text-transform: uppercase;
-    color: #fff;
+    color: white;
+    font-family: 'Lemonada';
     letter-spacing: 3px;
 }
 h2 {
