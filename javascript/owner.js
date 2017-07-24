@@ -15,7 +15,8 @@ var sitters = {'viv': {
 					'price': '25$/h',
 					'rating': 5,
 					'lat' : 32.109333,
-					'lng' : 34.956499
+					'lng' : 34.956499,
+					'phone_no': '+972 50 5860918'
 						}, 
 			'yaron': { 
 					'full_time': 'No', 
@@ -33,7 +34,8 @@ var sitters = {'viv': {
 					'price': '23$/h',
 					'rating': 4,
 					'lat' : 32.209333,
-					'lng' : 34.856499
+					'lng' : 34.856499,
+					'phone_no': '+972 50 5320918'
 						}, 
 			 'ana': {
 					'full_time': 'Yes', 
@@ -51,7 +53,8 @@ var sitters = {'viv': {
 					'price': '21$/h',
 					'rating': 3,
 					'lat' : 30.109333,
-					'lng' : 34.956499
+					'lng' : 34.956499,
+					'phone_no': '+972 50 5860218'
 						}, 
 			 'sydney': {
 					'full_time': 'No', 
@@ -69,7 +72,8 @@ var sitters = {'viv': {
 					'price': '29$/h',
 					'rating': 4,
 					'lat' : 32.0690247,
-					'lng' : 34.7767518
+					'lng' : 34.7767518,
+					'phone_no': '+972 21 5140918'
 						}, 
 			 'sylvie': {
 					'full_time': 'No', 
@@ -87,7 +91,8 @@ var sitters = {'viv': {
 					'price': '27$/h',
 					'rating': 4,
 					'lat' : 32.072334,
-					'lng' : 34.7816442
+					'lng' : 34.7816442,
+					'phone_no': '+972 51 5869918'
 						}, 
 			'alper': {
 					'full_time': 'Yes', 
@@ -105,7 +110,8 @@ var sitters = {'viv': {
 					'price': '24$/h',
 					'rating': 5,
 					'lat' : 32.065752,
-					'lng' : 34.7753353
+					'lng' : 34.7753353,
+					'phone_no': '+972 60 5860919'
 						}, 
 			'rifat': {
 					'full_time': 'Yes', 
@@ -123,7 +129,8 @@ var sitters = {'viv': {
 					'price': '25$/h',
 					'rating': 3,
 					'lat' : 32.061493,
-					'lng' : 34.7733403
+					'lng' : 34.7733403,
+					'phone_no': '+972 50 5920918'
 				}
 				}
 
@@ -169,52 +176,10 @@ function initMap() {
    //  	infowindow.open(map, marker);
   //  });
  })
-
-
-
-
 }
 
 
 
-
-
-
-
-
-
-// for(var i = 0; i<sitters.length; i++){
-// 	var newPerson = $('<div>').addClass('col-md-12 sitter')
-// 	newPerson.text(sitters[i].name);
-// 	var full_time = $("<div>").attr('key', key);
-
-// 	$('body').append(newPerson);
-// 	Object.keys(sitters[i]).forEach(function(key){
-// 		// console.log(key, sitters[i][key]);
-// 		var li = $('<li>'+ key + ':' + sitters[i][key]+ '</li>');
-// 		var parent = $('div[key=+'key');
-// 		parent.append(li)
-// 		newPerson.append(li);
-
-
-// 	})
-// }
-
-// for ( property in sitters[0] ) {
-//   console.log( property ); 
-// }
-
-// allsittersnames = sitters.keys()
-// for name in allsittersnames:
-//		.addClass().attr('name', name)     sitters[name].full_time
-
-// for (var prop in sitters) {
-//   console.log("summoner." + prop + " = " + sitters.prop);
-// }
-
-
-
-console.log(sitters.viv.full_time)
 
 function dogSitters() {
 	for (t = 0; t<Object.keys(sitters).length ; t++) {
@@ -290,6 +255,9 @@ function dogSitters() {
 		$(mainDiv).append(textHolder);
 		$(textHolder).append(aboutText);
 		$(textHolder).append(ul);
+
+		var contactNo = $('<div style="display:none"><span>Phone no: '+sitters[person].phone_no+'</span></div>').addClass('contactno');
+		$(textHolder).append(contactNo);
 		$('.sidebar').append(mainDiv);
 	}	
 }
@@ -308,6 +276,7 @@ $('.sitter').on('click', function(){
 	$('.mapDiv').css('width','95%');
 	$('.back').fadeIn();
 	google.maps.event.trigger(map, 'resize');
+	$('.contactno').fadeIn();
 	
 });
 
@@ -320,6 +289,7 @@ $(document).on('click', ".back", function () {
 	$('.sidebar').css('height','');
 	$('.back').fadeOut();
 	$('.sitter').fadeIn();
+	$('.contactno').fadeOut();
 });
 
 // $(document).on('click', ".asd", function () {

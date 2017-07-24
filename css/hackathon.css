@@ -7,12 +7,34 @@ body .container{
 
 }
 
+.sidebar::-webkit-scrollbar-track, body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.sidebar::-webkit-scrollbar, body::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+.sidebar::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+}
+
+#review-carousel {
+
+}
+
 .container .main.row {
 	height: 650px;
 	background-image: url('https://positively.com/files/dogwalkroutine.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	opacity: 0.6;
+
 }
 
 .container .main.row h1{
@@ -76,6 +98,7 @@ body .container{
 .container .guarantees.row{
 	height: 300px;
 	background-color: #efefef;
+	margin: 0;
 }
 
 .container .guarantees.row .section{
@@ -84,13 +107,16 @@ body .container{
 }
 
 .container .guarantees.row .logo-container{
-    margin-left: 10%;
     margin-top: 1%;
+    text-align: center;
+    width: 47%;
+    vertical-align: top;
 }
 
 .container .guarantees.row .guarantee-head{
 	color: black;
 	text-align: left;
+	text-shadow: -5px 5px 12px rgba(0, 0, 0, 0.42);
 }
 
 
@@ -113,7 +139,7 @@ body .container{
 
 .container .contact-us.row {
 	height: 380px;
-
+	margin: 0;
 }
 
 .container .contact-us.row .col-md-6{
@@ -135,7 +161,8 @@ body .container{
 }
 
 .container .footer.row{
-	height: 280px;
+	padding-bottom: 20px;
+	margin: 0;
 }
 .container .footer.row .col-md-3{
 	height: 280px;
@@ -147,7 +174,7 @@ body .container{
 
 .carousel-inner .item img {
     width: 100%;
-    position: absolute;
+    /* position: absolute; */
 }
 
 .carousel-inner .item .reviews{
@@ -158,17 +185,21 @@ body .container{
 	margin-right: 18px;
 }
 
-body .container .footer.row{
+.footer .item {
+    list-style-type: hebrew;
+    padding-left: 10px;
+}
 
-	width: auto;
-
+li.item:last-child {
+    margin-bottom: 20px;
 }
 
 .footer{
 	display: inline-block;
+	padding-top: 10px;
 }
 .footer.row{
-	background-color: #eae3e3;
+	background-color: rgba(105, 171, 157, 0.21);
 }
 
 .footer #copyrighttext{
